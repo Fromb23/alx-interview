@@ -1,4 +1,11 @@
+#!/usr/bin/python3
+""" Pascal triangle """
+
+
 def pascal_triangle(n):
+    """ Triangle """
+
+
     triangle = []
     if n <= 0:
         return triangle
@@ -10,7 +17,7 @@ def pascal_triangle(n):
 
             for j in range(len(prev_row) - 1):
                 new_row.append(prev_row[j] + prev_row[j + 1])
-                
+
             new_row.append(1)
             triangle.append(new_row)
 

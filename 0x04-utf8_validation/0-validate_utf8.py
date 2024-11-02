@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""
+UTF8 Validation
+"""
+
 
 def validUTF8(data):
+    """
+    Handles utf8-validation
+    """
     bytes_remaining = 0
     mask1 = 1 << 7
     mask2 = 1 << 6
